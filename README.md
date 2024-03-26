@@ -4,7 +4,7 @@
 <br/>
 
 <h2>About</h2>
-<strong>What is your project? IN</strong><br/>
+<strong>What is your project?</strong><br/>
 A program which uses opencv(computer vision library) and teachable machine(helps make machine learning models) in order to recognize sign language and transcribe it into english words
 <strong>Why'd you build it? IN</strong><br/>
 Because I wanted to create a project involving computer vision and this seemed like it would not only be interesting to build but also useful
@@ -14,7 +14,7 @@ Because I wanted to create a project involving computer vision and this seemed l
  Summarize your goals, non-goals, and project requirements from your design doc. Make sure to link your design doc here as well.
  
  <h3>Sprint Goal</h3>
-<strong>*Figure out why the model doesn't work(always returns L) and make it work/n*Complete the rest of the program(use the model to build actual english words)/n*Figure out how to make spaces in between words</strong><br/>
+<strong>-Figure out why the model doesn't work(always returns L) and make it work</strong><br/>-Complete the rest of the program(use the model to build actual english words)</strong><br/>-Figure out how to make spaces in between words</strong><br/>
 
 <h2>Key learnings</h2>
 <strong>FILL THIS IN</strong><br/>
