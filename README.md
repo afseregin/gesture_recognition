@@ -14,7 +14,7 @@ Because I wanted to create a project involving computer vision and this seemed l
  Summarize your goals, non-goals, and project requirements from your design doc. Make sure to link your design doc here as well.
  
  <h3>Sprint Goal</h3>
--Figure out why the model doesn't work(always returns L) and make it work</strong><br/>-Complete the rest of the program(use the model to build actual english words)</strong><br/>-Figure out how to make spaces in between words</strong><br/>
+-Figure out why the model doesn't work(always returns L) and make it work</strong><br/>-Complete the rest of the program(use the model to build actual english words)</strong><br/>-Figure out how to recognize spaces in between words</strong><br/>
 
 <h2>Key learnings</h2>
 
