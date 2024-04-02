@@ -11,6 +11,7 @@ cap = cv2.VideoCapture(0)
 cap.set(3,width)
 cap.set(4, height)
 detector = HandDetector(maxHands = 1)
+#import model and labels file
 classifier = Classifier("/Users/aser8929/model/keras_model.h5", "/Users/aser8929/model/labels.txt")
 
 offset = 20
