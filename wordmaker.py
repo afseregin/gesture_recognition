@@ -19,8 +19,9 @@ imgsize = 300
 
 folder = "/Users/aser8929/Data/Z"
 counter = 0
-global index
+global index, previndex
 index = None
+previndex = None
 labels = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
 while True:
@@ -44,6 +45,7 @@ while True:
             wgap = math.ceil((imgsize-wcal)/2)
             imgwhite[:, wgap:wcal+wgap] = imgresize
             #get pridiction from the model using the current frame
+            previndex = index
             prediction, index = classifier.getPrediction(img)
             print(prediction,index)
 
@@ -57,6 +59,10 @@ while True:
 
         cv2.imshow("imgcrop", imgcrop)
         cv2.imshow("imgwhite", imgwhite)
+        
 
     cv2.imshow("image", img)
     cv2.waitKey(1)
+##########making the words using the prediction#######
+    if previndex != index:
+        
