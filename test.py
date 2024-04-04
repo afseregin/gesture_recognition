@@ -41,6 +41,7 @@ while True:
             imgresizeshape = imgresize.shape
             wgap = math.ceil((imgsize-wcal)/2)
             imgwhite[:, wgap:wcal+wgap] = imgresize
+            #get pridiction from the model using the current frame
             prediction, index = classifier.getPrediction(img)
             print(prediction,index)
 
