@@ -20,6 +20,7 @@ imgsize = 300
 folder = "/Users/aser8929/Data/Z"
 counter = 0
 global index, previndex
+sentence = ""
 index = None
 previndex = None
 labels = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
@@ -65,4 +66,4 @@ while True:
     cv2.waitKey(1)
 ##########making the words using the prediction#######
     if previndex != index:
-        
+        sentence = sentence + labels[index]
