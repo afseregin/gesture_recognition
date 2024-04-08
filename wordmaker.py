@@ -4,6 +4,7 @@ from cvzone.ClassificationModule import Classifier
 import cv2
 import time
 from cvzone.HandTrackingModule import HandDetector
+import keras
 
 height, width = 480,640
 
@@ -12,12 +13,11 @@ cap.set(3,width)
 cap.set(4, height)
 detector = HandDetector(maxHands = 1)
 #import model and labels file
-classifier = Classifier("/Users/aser8929/model/keras_model.h5", "/Users/aser8929/model/labels.txt")
+classifier = Classifier("model/keras_model.h5", "model/labels.txt")
 
 offset = 20
 imgsize = 300
 
-folder = "/Users/aser8929/Data/Z"
 counter = 0
 global index, previndex
 sentence = ""
